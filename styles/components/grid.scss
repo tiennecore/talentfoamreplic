@@ -1,0 +1,32 @@
+.grid-item-media{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.grid-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 2110px;
+  height: 1600px;
+  top: calc(((1vh*100) - 1600px)/2);
+  left: calc((100vw - 2110px)/2);
+  content-visibility: auto;
+}
+.grid-elements{
+  display: grid;
+  grid-template-columns: repeat(5,420px);
+
+  .element{
+    padding: 32px 46px;
+    width: 420px;
+    height: 400px;
+  }
+
+  .thumbnail-wrapper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+}
